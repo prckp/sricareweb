@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - SriCare</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form class="register-form" onsubmit="registerUser(event)">
+      <label for="mobile-number">Sri Tel Mobile Number</label>
+      <input type="text" id="mobile-number" name="mobile-number" placeholder="Sri Tel Mobile Number" required>
+
+      <label for="account-id">Sri Tel Account ID</label>
+      <input type="text" id="account-id" name="account-id" placeholder="Sri Tel Account ID" required>
+
+      <label for="username">Create a Username</label>
+      <input type="text" id="username" name="username" placeholder="Create a Username" required>
+
+      <label for="password">Create a Password</label>
+      <input type="password" id="password" name="password" placeholder="Create a Password" required>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="certify" name="certify" required>
+        <label for="certify">I hereby certify that I’m a current customer of STL</label>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>
