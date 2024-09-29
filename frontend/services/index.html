@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activate Services - SriCare</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../sritel-logo.png" alt="SriTel Logo">
+      </div>
+      <button class="nav-btn" onclick="window.location.href='../services/index.html'">Services</button>
+      <button class="nav-btn" onclick="window.location.href='../bills/index.html'">Bills</button>
+      <button class="nav-btn" onclick="window.location.href='../support/index.html'">Support</button>
+      <div class="account-btn">
+        <button onclick="window.location.href='../account/index.html'">My Account</button>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <h2>Activate Value Added Services</h2>
+      <p>Select the Service you want and click Activate to activate it</p>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>SMS Alert Service</h3>
+          <p>Get SMS Alerts on Missed Calls and Mobile Reloads</p>
+          <button onclick="activateService('SMS Alert Service')">Activate</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Ring-in Tones</h3>
+          <p>Personalise your calling experience with customised Ringing tones</p>
+          <button onclick="activateService('Ring-in Tones')">Activate</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Voice over LTE</h3>
+          <p>Crystal Clear Voice Calls when you are inside 4G or 5G Coverage</p>
+          <button class="activated">Activated</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Quick Reload Loans</h3>
+          <p>Get a quick loan when your mobile balance hits Rs.10/=</p>
+          <button onclick="activateService('Quick Reload Loans')">Activate</button>
+        </div>
+
+        <div class="service-card">
+          <h3>Mega Data Deals</h3>
+          <p>Special Downloader packages for Late Night Downloaders</p>
+          <button onclick="activateService('Mega Data Deals')">Activate</button>
+        </div>
+
+        <div class="service-card">
+          <h3>International Roaming</h3>
+          <p>Use the same number when you are travelling to a different country</p>
+          <button class="activated">Activated</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>

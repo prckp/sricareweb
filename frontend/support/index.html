@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support - SriCare</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../sritel-logo.png" alt="SriTel Logo">
+      </div>
+      <button class="nav-btn" onclick="window.location.href='../services/index.html'">Services</button>
+      <button class="nav-btn" onclick="window.location.href='../bills/index.html'">Bills</button>
+      <button class="nav-btn" onclick="window.location.href='../support/index.html'">Support</button>
+      <div class="account-btn">
+        <button onclick="window.location.href='../account/index.html'">My Account</button>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <div class="chat-header">
+        <h2>Chat with Support Agents Online</h2>
+        <p>Click Start Chatting to Start a new chat</p>
+        <button class="start-chat" onclick="startChat()">Start Chatting</button>
+      </div>
+
+      <!-- Previous Chats Section -->
+      <h3>Previous Chats</h3>
+      <div class="chats-list">
+        <div class="chat-card">
+          <h4>Requesting More Data</h4>
+          <p>Chat was disconnected</p>
+          <button class="closed">Closed</button>
+        </div>
+
+        <div class="chat-card">
+          <h4>Phone Damage</h4>
+          <p>Chat was disconnected</p>
+          <button class="open">Open</button>
+        </div>
+
+        <div class="chat-card">
+          <h4>Unusual Bill on August</h4>
+          <p>Chat was disconnected</p>
+          <button class="closed">Closed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>

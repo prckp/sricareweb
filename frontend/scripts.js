@@ -47,9 +47,37 @@ function login() {
     // Example of logging form data to the console
     console.log('Username:', username);
     console.log('Password :', password);
-    alert('Login successful for user: ' + username);
+    window.location.href = '../services/index.html';
+
    
   
    
   }
+
+  function activateService(serviceName) {
+    alert(serviceName + ' activated!');
+    // Add code here to send activation request to backend, if necessary
+  }
+  
+  function startChat() {
+    alert('Starting a new chat...');
+    // Here, add logic to initiate a new chat with the support agent
+  }
+
+  function viewBill(month) {
+    alert('Viewing eBill for ' + month + '...');
+    // Here, add the logic to open/view the respective eBill
+  }
+  
+  function payBills() {
+    alert('Redirecting to payment page...');
+    // Here, add the logic to redirect to the bill payment page
+  }
+  
+  function editProfile() {
+    alert('Redirecting to profile editing page...');
+    // Add logic to redirect to an actual edit profile page
+  }
+  
+  
   
