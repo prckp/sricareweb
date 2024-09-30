@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bills - SriCare</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../sritel-logo.png" alt="SriTel Logo">
+      </div>
+      <button class="nav-btn" onclick="window.location.href='../services/index.html'">Services</button>
+      <button class="nav-btn" onclick="window.location.href='../bills/index.html'">Bills</button>
+      <button class="nav-btn" onclick="window.location.href='../support/index.html'">Support</button>
+      <div class="account-btn">
+        <button onclick="window.location.href='../account/index.html'">My Account</button>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <div class="bills-header">
+        <h2>View eBills</h2>
+        <p>You can view your previous eBills and make payments here</p>
+        <button class="pay-bills-btn" onclick="payBills()">Pay Bills Online</button>
+      </div>
+
+      <!-- Bills List -->
+      <div class="bills-list">
+        <div class="bill-card">
+          <h4>October Bill</h4>
+          <h3>Rs. 12,450.23</h3>
+          <p>Due Date: 04/11/2024</p>
+          <button onclick="viewBill('October')">View eBill</button>
+        </div>
+
+        <div class="bill-card">
+          <h4>September Bill</h4>
+          <h3>Rs. 12,450.23</h3>
+          <p>Due Date: 04/11/2024</p>
+          <button onclick="viewBill('September')">View eBill</button>
+        </div>
+
+        <div class="bill-card">
+          <h4>August Bill</h4>
+          <h3>Rs. 12,450.23</h3>
+          <p>Due Date: 04/11/2024</p>
+          <button onclick="viewBill('August')">View eBill</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>

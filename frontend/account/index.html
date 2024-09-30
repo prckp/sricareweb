@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - SriCare</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../sritel-logo.png" alt="SriTel Logo">
+      </div>
+      <button class="nav-btn" onclick="window.location.href='../services/index.html'">Services</button>
+      <button class="nav-btn" onclick="window.location.href='../bills/index.html'">Bills</button>
+      <button class="nav-btn" onclick="window.location.href='../support/index.html'">Support</button>
+      <div class="account-btn">
+        <button class="active">My Account</button>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+      <h2>My Account</h2>
+      <p>View and Edit your SriCare Account</p>
+
+      <!-- Account Details -->
+      <div class="account-details">
+        <div class="account-field">
+          <label for="mobile-number">Sri Tel Mobile Number</label>
+          <span id="mobile-number">0766640050</span>
+        </div>
+
+        <div class="account-field">
+          <label for="account-id">Sri Tel Account ID</label>
+          <span id="account-id">GL2227298</span>
+        </div>
+
+        <div class="account-field">
+          <label for="username">SriCare Username</label>
+          <span id="username">AKD54</span>
+        </div>
+
+        <div class="account-field">
+          <label for="password">SriCare Password</label>
+          <span id="password">**********</span>
+        </div>
+      </div>
+
+      <!-- Edit Profile Button -->
+      <button class="edit-profile-btn" onclick="editProfile()">Edit Profile</button>
+    </div>
+  </div>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>
